@@ -1,0 +1,28 @@
+---
+// Component imports and setup JavaScript go here!
+import MyCoolComponent from "$components/MyCoolComponent.astro"
+import MySuperComponent from "$components/MySuperComponent.vue"
+import MyAwesomeComponent from "../components/MyAwesomeComponent.jsx"
+
+const myMetaEnv = import.meta.env
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Welcome to Astro</title>
+		<style>
+			/* scoped CSS styles go here: */
+			/* h1 { ... } */
+		</style>
+	</head>
+
+	<body>
+		<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
+
+		<MyCoolComponent/>
+		<MySuperComponent client:idle />
+	</body>
+</html>

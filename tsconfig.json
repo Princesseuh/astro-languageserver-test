@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "alwaysStrict": true,
+        "types": ["node"],
+        "baseUrl": ".",
+        "paths": {
+            "$components/*": ["src/components/*"],
+        }
+    },
+    "exclude": ["node_modules"]
+}
